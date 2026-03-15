@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Góp Ý & Khiếu Nại</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+
+        header {
+            height: 130px;
+            background-color: #4a92e4;
+            color: white;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+        }
+
+        #back-button {
+            position: absolute;
+            transform: translateY(-50%);
+            top: 30%;
+            left: 20px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0 10px;
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        #back-button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            /* nền trắng mờ khi hover */
+        }
+
+        header h1 {
+            padding-top: 24px;
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            width: 100%;
+            margin-top: 2px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .container {
+            max-width: 1000px;
+            justify-content: center;
+            margin: auto;
+            padding: 50px 50px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .container p {
+            margin-top: -10px;
+        }
+
+        h2 {
+            color: #0071e3;
+            margin-top: 30px;
+        }
+
+        ul {
+            line-height: 2;
+            padding-left: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        a[href^="mailto:"]:hover {
+            text-decoration: underline !important;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            margin-top: 30px;
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            background-color: #0071e3;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #005bb5;
+        }
+
+        .form-link {
+            color: #0071e3;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .form-link:hover {
+            text-decoration: underline;
+        }
+
+        .end {
+            text-align: center;
+            font-style: italic;
+            font-size: 16px;
+            color: #333;
+            margin: 40px 0 20px 0;
+        }
+
+        .footer-bottom {
+            color: #000;
+            margin-top: 30px;
+            text-align: center;
+            align-items: baseline;
+            font-size: 12px;
+            padding: 5px 0;
+            background-color: #d9d9d9;
+        }
+
+        .footer-bottom p {
+            text-align: center;
+            margin: 25px 0;
+            line-height: 1.1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <button id="back-button" aria-label="Quay lại trang trước">
+            <i class="fa fa-arrow-left"></i>
+        </button>
+        <div>
+            <h1>GÓP Ý & KHIẾU NẠI</h1>
+            <p>Mọi ý kiến của khách hàng là nền tảng phát triển</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>1. Mục đích tiếp nhận</h2>
+        <ul>
+            <li>Tiếp nhận và xử lý các phản ánh, khiếu nại liên quan đến sản phẩm, dịch vụ, giao hàng, bảo hành...</li>
+            <li>Ghi nhận các góp ý, đề xuất nhằm cải thiện trải nghiệm mua sắm của Quý khách.</li>
+        </ul>
+
+        <h2>2. Cách thức gửi khiếu nại / góp ý</h2>
+        <ul>
+            <li>
+                <strong>Gửi trực tiếp tại website:</strong> vui lòng điền đầy đủ thông tin vào biểu mẫu
+                <a href="/form-gopy&khieunai.html" class="form-link">tại đây</a>.
+                Chúng tôi sẽ phản hồi trong vòng 24–48 giờ làm việc.
+            </li>
+            <li><strong>Gọi đến tổng đài chăm sóc khách hàng:
+                </strong> 1800 7003 (miễn phí). Thời gian: 08:00 - 21:00 (cả tuần, kể cả Lễ Tết)</li>
+            <li><strong>Gửi Email:</strong> <a href="mailto:hotro@hearttie.vn"
+                    style="color: #0071e3; text-decoration: none;">
+                    hotro@hearttie.vn</a> (Vui lòng ghi rõ tiêu đề
+                thư: “Khiếu nại” hoặc “Góp ý” kèm nội dung chi tiết).</li>
+        </ul>
+
+        <h2>3. Quy trình xử lý khiếu nại</h2>
+        <ul>
+            <li><strong>Bước 1:</strong> Tiếp nhận thông tin từ khách hàng qua các kênh trên.</li>
+            <li><strong>Bước 2:</strong> Kiểm tra và xác minh thông tin liên quan.</li>
+            <li><strong>Bước 3:</strong> Liên hệ trực tiếp với khách hàng để giải quyết.</li>
+            <li><strong>Bước 4:</strong> Phản hồi kết quả xử lý trong thời gian sớm nhất (tối đa 7 ngày làm việc).</li>
+        </ul>
+
+        <h2>4. Cam kết của chúng tôi</h2>
+        <ul>
+            <li>Xử lý minh bạch, khách quan và đúng quy định.</li>
+            <li>Đảm bảo thông tin cá nhân của khách hàng được bảo mật tuyệt đối.</li>
+            <li>Luôn cầu thị, cải thiện dịch vụ dựa trên mọi đóng góp của khách hàng.</li>
+        </ul>
+        <div class="end">
+        <p><strong>HEARTTIE</strong> luôn lắng nghe và trân trọng mọi ý kiến từ Quý khách hàng để không ngừng nâng cao chất lượng sản
+            phẩm và dịch vụ.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2020 Công ty cổ phần HEARTTIE. GPDKKD: 0303217354 do sở Cần Thơ cấp ngày 02/01/2015. GPMXH:
+                21/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 11/01/2021. Địa chỉ: 128, Nguyễn Văn Cừ (nối dài),
+                Phường An Bình, Quận Ninh Kiều, Thành Phố Cần Thơ.
+                <br />
+                Chịu trách nhiệm nội dung: Tiêu Ngọc Thanh Tâm. Tất cả các quyền được bảo
+                lưu.
+            </p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('back-button').addEventListener('click', function () {
+            history.back();
+        });
+    </script>
+</body>
+
+</html>

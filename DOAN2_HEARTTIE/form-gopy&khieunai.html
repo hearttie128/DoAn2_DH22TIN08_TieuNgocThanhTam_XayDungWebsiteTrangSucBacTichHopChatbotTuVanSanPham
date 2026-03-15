@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khiếu nại & Góp ý</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 500px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0071e3;
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+            margin: 10px 25px 5px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            width: 90%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #4a92e4;
+            border-radius: 30px;
+            font-size: 16px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        textarea {
+            border-radius: 10px;
+            height: 150px;
+            resize: vertical;
+        }
+
+        input:hover,
+        input:focus,
+        select:hover,
+        select:focus,
+        textarea:hover,
+        textarea:focus {
+            outline: #4A92E4 solid 1.5px;
+        }
+
+        button {
+            display: block;
+            margin: 50px auto 0 auto;
+            margin-top: 30px;
+            padding: 12px;
+            background-color: #4A92E4;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 90%;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #3685d6;
+            transform: scale(1.01);
+        }
+
+        .success {
+            display: none;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #2e7d32;
+        }
+
+        .home-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #0071e3;
+            text-decoration: none;
+        }
+
+        .home-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="formContainer">
+        <h1>KHIẾU NẠI & GÓP Ý</h1>
+        <form id="feedbackForm">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email liên hệ:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="type">Loại phản hồi:</label>
+            <select id="type" name="type" required>
+                <option value="gop-y">Góp ý</option>
+                <option value="khieu-nai">Khiếu nại</option>
+            </select>
+
+            <label for="content">Nội dung phản hồi:</label>
+            <textarea id="content" name="content" rows="5" required
+                placeholder="Vui lòng nhập góp ý của bạn..."></textarea>
+
+            <button type="submit" id="submitBtn">Gửi góp ý</button>
+        </form>
+    </div>
+
+    <div class="container success" id="successMsg">
+        Cảm ơn bạn đã gửi phản hồi! Chúng tôi sẽ liên hệ lại sớm nhất có thể.
+        <a href="/" class="home-link">← Quay về trang chủ</a>
+    </div>
+
+    <script>
+        const typeSelect = document.getElementById("type");
+        const submitBtn = document.getElementById("submitBtn");
+        const contentArea = document.getElementById("content");
+
+        function updateFormTexts() {
+            if (typeSelect.value === "khieu-nai") {
+                submitBtn.textContent = "Gửi khiếu nại";
+                contentArea.placeholder = "Vui lòng mô tả chi tiết vấn đề bạn gặp phải...";
+            } else {
+                submitBtn.textContent = "Gửi góp ý";
+                contentArea.placeholder = "Vui lòng nhập góp ý của bạn...";
+            }
+        }
+
+        window.addEventListener("DOMContentLoaded", updateFormTexts);
+        typeSelect.addEventListener("change", updateFormTexts);
+
+        document.getElementById("feedbackForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            document.getElementById("formContainer").style.display = "none";
+            document.getElementById("successMsg").style.display = "block";
+        });
+    </script>
+</body>
+
+</html>

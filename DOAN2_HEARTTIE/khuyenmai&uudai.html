@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Khuyến mãi & Ưu đãi - HEARTTIE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #000;
+        }
+        header {
+            height: 130px;
+            background-color: #4a92e4;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        #back-button {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+        #back-button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            padding-top: 24px;
+        }
+        header p {
+            margin-top: 2px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0071e3;
+            margin-top: 0;
+        }
+        .promo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .promo-item {
+            background: #f1f6fc;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+        .promo-item:hover {
+            transform: translateY(-5px);
+        }
+        .promo-item i {
+            font-size: 36px;
+            color: #4a92e4;
+            margin-bottom: 15px;
+        }
+        .promo-item h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+        .promo-item p {
+            line-height: 1.6;
+            color: #555;
+        }
+        .note {
+            margin-top: 40px;
+            font-style: italic;
+            color: #333;
+            text-align: center;
+        }
+        .footer-bottom {
+            color: #000;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 12px;
+            padding: 5px 0;
+            background-color: #d9d9d9;
+        }
+        .footer-bottom p {
+            margin: 25px 0;
+            line-height: 1.1;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <button id="back-button"><i class="fa fa-arrow-left"></i></button>
+    <div>
+        <h1>HEARTTIE</h1>
+        <p>Trải nghiệm mua sắm tốt hơn</p>
+    </div>
+</header>
+
+<div class="container">
+    <h2>Ưu đãi dành cho khách hàng</h2>
+    <p>
+        HEARTTIE luôn mang đến những chương trình khuyến mãi hấp dẫn nhằm tri ân khách hàng đã tin tưởng
+        và đồng hành cùng chúng tôi. Tại đây, bạn có thể dễ dàng tìm thấy các ưu đãi mới nhất dành cho sản phẩm
+        cao cấp.
+    </p>
+
+    <div class="promo-grid">
+        <div class="promo-item">
+            <i class="fa-solid fa-tags"></i>
+            <h3>Giảm giá trực tiếp</h3>
+            <p>Giảm ngay đến 20% cho các sản phẩm dây chuyền, vòng – lắc, nhẫn và bông taii trong thời gian khuyến mãi.</p>
+        </div>
+
+        <div class="promo-item">
+            <i class="fa-solid fa-gift"></i>
+            <h3>Quà tặng kèm</h3>
+            <p>Tặng phụ kiện chính hãng khi mua sản phẩm đủ điều kiện.</p>
+        </div>
+
+        <div class="promo-item">
+            <i class="fa-solid fa-credit-card"></i>
+            <h3>Ưu đãi thanh toán</h3>
+            <p>Hoàn tiền hoặc giảm giá khi thanh toán qua thẻ ngân hàng, ví điện tử hoặc trả góp 0% lãi suất.</p>
+        </div>
+
+        <div class="promo-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Miễn phí giao hàng</h3>
+            <p>Miễn phí giao hàng toàn quốc cho đơn hàng từ giá trị quy định trong thời gian ưu đãi.</p>
+        </div>
+    </div>
+
+    <div class="note">
+        * Các chương trình khuyến mãi có thể thay đổi theo từng thời điểm và số lượng có hạn.
+    </div>
+</div>
+
+<footer>
+    <div class="footer-bottom">
+        <p>© 2020 Công ty cổ phần HEARTTIE. GPDKKD: 0303217354 do sở Cần Thơ cấp ngày 02/01/2015. GPMXH:
+            21/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 11/01/2021. Địa chỉ: 128, Nguyễn Văn Cừ (nối dài),
+            Phường An Bình, Quận Ninh Kiều, Thành Phố Cần Thơ.
+            <br />
+            Chịu trách nhiệm nội dung: Tiêu Ngọc Thanh Tâm. Tất cả các quyền được bảo
+            lưu.
+        </p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('back-button').onclick = () => history.back();
+</script>
+</body>
+</html>

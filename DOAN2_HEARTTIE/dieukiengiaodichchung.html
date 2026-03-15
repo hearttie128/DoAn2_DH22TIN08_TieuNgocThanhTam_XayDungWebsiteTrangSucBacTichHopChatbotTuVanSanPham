@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Điều kiện giao dịch chung - HEARTTIE</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+
+        header {
+            height: 130px;
+            background-color: #4a92e4;
+            color: white;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+        }
+
+        #back-button {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+
+        #back-button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            padding-top: 24px;
+        }
+
+        header p {
+            margin-top: 2px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #0071e3;
+            margin-top: 0;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            padding-left: 20px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .footer-bottom {
+            color: #000;
+            margin-top: 30px;
+            text-align: center;
+            align-items: baseline;
+            font-size: 12px;
+            padding: 5px 0;
+            background-color: #d9d9d9;
+        }
+
+        .footer-bottom p {
+            text-align: center;
+            margin: 25px 0;
+            line-height: 1.1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <button id="back-button" aria-label="Quay lại">
+            <i class="fa fa-arrow-left"></i>
+        </button>
+        <div>
+            <h1>HEARTTIE</h1>
+            <p>Quy trình mua sắm & giao dịch</p>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="section">
+            <h2>1. Phạm vi áp dụng</h2>
+            <p>
+                Điều kiện giao dịch chung này áp dụng cho tất cả khách hàng thực hiện mua sắm, giao dịch và sử dụng
+                các dịch vụ tại website <strong>HEARTTIE</strong>. Khi khách hàng đặt mua sản phẩm, đồng nghĩa
+                với việc đã đọc, hiểu và đồng ý với các điều khoản được nêu trong văn bản này.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>2. Thông tin sản phẩm</h2>
+            <ul>
+                <li>Tất cả sản phẩm được đăng bán đều là hàng chính hãng, có nguồn gốc rõ ràng.</li>
+                <li>Thông tin về giá, cấu hình, hình ảnh mang tính minh họa và có thể thay đổi theo từng thời điểm.</li>
+                <li>HEARTTIE cam kết cung cấp thông tin minh bạch và chính xác nhất cho khách hàng.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>3. Giá cả và thanh toán</h2>
+            <ul>
+                <li>Giá bán được niêm yết công khai và đã bao gồm thuế giá trị gia tăng (VAT).</li>
+                <li>Khách hàng có thể thanh toán bằng tiền mặt, chuyển khoản hoặc các hình thức thanh toán trực tuyến
+                    được hỗ trợ trên website.</li>
+                <li>HEARTTIE có quyền từ chối hoặc hủy đơn hàng nếu phát hiện sai sót về giá hoặc thanh toán không hợp lệ.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>4. Giao hàng</h2>
+            <ul>
+                <li>Thời gian giao hàng dự kiến từ 1–5 ngày làm việc tùy khu vực.</li>
+                <li>Khách hàng có trách nhiệm kiểm tra sản phẩm khi nhận hàng.</li>
+                <li>HEARTTIE không chịu trách nhiệm đối với các trường hợp giao hàng chậm do yếu tố bất khả kháng.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>5. Đổi trả và bảo hành</h2>
+            <ul>
+                <li>Sản phẩm được đổi trả theo đúng chính sách đổi trả đã công bố.</li>
+                <li>Bảo hành theo tiêu chuẩn của nhà sản xuất hoặc nhà phân phối chính hãng.</li>
+                <li>Sản phẩm bị từ chối bảo hành nếu có dấu hiệu can thiệp phần cứng, rơi vỡ hoặc vào nước.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>6. Quyền và nghĩa vụ của khách hàng</h2>
+            <ul>
+                <li>Cung cấp thông tin chính xác khi đặt hàng.</li>
+                <li>Tuân thủ các điều khoản và chính sách của HEARTTIE.</li>
+                <li>Chịu trách nhiệm với mọi hành vi sử dụng tài khoản cá nhân.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>7. Quyền và nghĩa vụ của HEARTTIE</h2>
+            <ul>
+                <li>Bảo mật thông tin cá nhân của khách hàng theo quy định pháp luật.</li>
+                <li>Cung cấp sản phẩm và dịch vụ đúng cam kết.</li>
+                <li>Có quyền thay đổi điều kiện giao dịch mà không cần báo trước.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>8. Điều khoản chung</h2>
+            <p>
+                Điều kiện giao dịch chung này có hiệu lực kể từ ngày được công bố. Mọi tranh chấp phát sinh
+                sẽ được ưu tiên giải quyết thông qua thương lượng, nếu không đạt được thỏa thuận sẽ được
+                xử lý theo quy định của pháp luật Việt Nam.
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2020 Công ty cổ phần HEARTTIE. GPDKKD: 0303217354 do sở Cần Thơ cấp ngày 02/01/2015. GPMXH:
+                21/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 11/01/2021. Địa chỉ: 128, Nguyễn Văn Cừ (nối dài),
+                Phường An Bình, Quận Ninh Kiều, Thành Phố Cần Thơ.
+                <br />
+                Chịu trách nhiệm nội dung: Tiêu Ngọc Thanh Tâm. Tất cả các quyền được bảo
+                lưu.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('back-button').addEventListener('click', function () {
+            history.back();
+        });
+    </script>
+</body>
+
+</html>

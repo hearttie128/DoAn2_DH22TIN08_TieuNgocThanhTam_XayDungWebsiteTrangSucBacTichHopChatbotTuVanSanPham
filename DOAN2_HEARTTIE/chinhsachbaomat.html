@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chính sách bảo mật</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            height: 130px;
+            background-color: #4a92e4;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        #back-button {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        #back-button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        header h1 {
+            padding-top: 24px;
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            width: 100%;
+            margin-top: -5px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 50px 50px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+        }
+
+        h2 {
+            color: #0071e3;
+            margin-top: 30px;
+            font-weight: 700;
+        }
+
+        h3 {
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        a {
+            color: #0071e3;
+            text-decoration: none;
+        }
+
+        a[href^="mailto:"]:hover {
+            text-decoration: underline !important;
+        }
+
+        nav.toc {
+            margin-top: 0;
+            background: #f1f5fb;
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        nav.toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        nav.toc ul li {
+            margin-bottom: 8px;
+        }
+
+        nav.toc ul li a {
+            color: #0071e3;
+            font-weight: 600;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px 15px;
+                margin: 20px 10px;
+            }
+
+            header h1 {
+                font-size: 26px;
+            }
+        }
+
+        .footer-bottom {
+            color: #000;
+            margin-top: 30px;
+            text-align: center;
+            align-items: baseline;
+            font-size: 12px;
+            padding: 5px 0;
+            background-color: #d9d9d9;
+        }
+
+        .footer-bottom p {
+            text-align: center;
+            margin: 25px 0;
+            line-height: 1.1;
+        }
+
+        nav.toc strong {
+            font-family: Arial, sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            color: #0071e3;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <button id="back-button" aria-label="Quay lại trang trước" title="Quay lại">
+            <i class="fa fa-arrow-left"></i>
+        </button>
+        <div>
+            <h1>CHÍNH SÁCH BẢO MẬT</h1>
+            <p>Bảo vệ quyền riêng tư và thông tin khách hàng</p>
+        </div>
+    </header>
+    <div class="container">
+        <nav class="toc" aria-label="Điều khoản chính sách bảo mật">
+            <strong>ĐIỀU KHOẢN</strong>
+            <ul>
+                <li><a href="#info-collection">1. Thu thập thông tin cá nhân</a></li>
+                <li><a href="#info-use">2. Mục đích và phạm vi sử dụng dữ liệu</a></li>
+                <li><a href="#info-storage">3. Phương thức lưu trữ và bảo mật thông tin</a></li>
+                <li><a href="#user-rights">4. Quyền của người dùng</a></li>
+                <li><a href="#cookies">5. Cookies và công nghệ tương tự</a></li>
+                <li><a href="#data-sharing">6. Chia sẻ với bên thứ ba</a></li>
+                <li><a href="#children">7. Chính sách bảo vệ dữ liệu trẻ em</a></li>
+                <li><a href="#contact">8. Cơ chế tiếp nhận, xử lý phản hồi và liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <section id="info-collection">
+            <h2>1. Dữ liệu cá nhân được thu thập</h2>
+            <p>Khi bạn truy cập và sử dụng các dịch vụ tại HEARTTIE, chúng tôi có thể thu thập một số thông tin cá
+                nhân nhằm phục vụ quá trình mua sắm và nâng cao trải nghiệm của bạn. Các thông tin được thu thập bao
+                gồm:</p>
+            <ul>
+                <li><strong>Thông tin định danh:</strong> Họ tên, số điện thoại, địa chỉ email, địa chỉ nhận hàng, ngày
+                    sinh, giới tính.</li>
+                <li><strong>Thông tin tài khoản:</strong> Tên đăng nhập, mật khẩu đã mã hóa, lịch sử đăng nhập, quyền
+                    truy cập.</li>
+                <li><strong>Thông tin giao dịch:</strong> Lịch sử đơn hàng, phương thức thanh toán, số lượng sản phẩm đã
+                    mua, trạng thái đơn hàng.</li>
+                <li><strong>Thông tin phản hồi và khảo sát:</strong> Ý kiến đánh giá sản phẩm, bình luận, phản hồi chất
+                    lượng dịch vụ.</li>
+                <li><strong>Thông tin kỹ thuật:</strong> Địa chỉ IP, loại thiết bị, trình duyệt, hệ điều hành, cookie và
+                    các dữ liệu truy cập trang web.</li>
+                <li><strong>Thông tin từ bên thứ ba (nếu có):</strong> Chẳng hạn khi bạn đăng nhập bằng tài khoản mạng
+                    xã hội hoặc ví điện tử.</li>
+            </ul>
+            <p>Chúng tôi chỉ thu thập thông tin trong phạm vi cần thiết và luôn thông báo rõ mục đích sử dụng. Việc cung
+                cấp thông tin là tự nguyện, tuy nhiên trong một số trường hợp, nếu bạn không cung cấp thông tin cần
+                thiết, chúng tôi có thể không thể cung cấp đầy đủ dịch vụ cho bạn.</p>
+        </section>
+
+        <section id="info-use">
+            <h2>2. Mục đích và phạm vi sử dụng dữ liệu</h2>
+            <p>Thông tin của bạn được sử dụng để:</p>
+            <ul>
+                <li>Xử lý đơn hàng, thanh toán và giao hàng chính xác, kịp thời.</li>
+                <li>Gửi các thông báo liên quan đến đơn hàng, chương trình khuyến mãi, ưu đãi đặc biệt.</li>
+                <li>Cải thiện trải nghiệm người dùng và phát triển dịch vụ tốt hơn.</li>
+                <li>Thực hiện các yêu cầu hỗ trợ khách hàng.</li>
+            </ul>
+        </section>
+
+        <section id="info-storage">
+            <h2>3. Phương thức lưu trữ và bảo mật thông tin</h2>
+            <p>HEARTTIE cam kết áp dụng các biện pháp bảo mật kỹ thuật và tổ chức để bảo vệ dữ liệu cá nhân của bạn
+                khỏi việc truy cập trái phép, thay đổi, tiết lộ hoặc phá hủy.</p>
+            <ul>
+                <li>Dữ liệu được lưu trữ trên máy chủ an toàn, có kiểm soát truy cập nghiêm ngặt.</li>
+                <li>Thông tin cá nhân chỉ được chia sẻ khi có sự đồng ý hoặc theo yêu cầu pháp luật.</li>
+                <li>Nhân viên được đào tạo về bảo mật và tuân thủ các quy định về bảo vệ thông tin cá nhân.</li>
+            </ul>
+        </section>
+
+        <section id="user-rights">
+            <h2>4. Quyền của người dùng</h2>
+            <p>Bạn có quyền:</p>
+            <ul>
+                <li>Truy cập, chỉnh sửa hoặc xóa thông tin cá nhân của mình.</li>
+                <li>Quản lý tùy chọn nhận thông tin tiếp thị, khuyến mãi.</li>
+                <li>Từ chối hoặc hạn chế việc xử lý dữ liệu cá nhân trong một số trường hợp..</li>
+                <li>Yêu cầu giải đáp và khiếu nại liên quan đến quyền riêng tư.</li>
+            </ul>
+            <p>Mọi yêu cầu vui lòng gửi về email <a href="mailto:hotro@hearttie.vn">hotro@hearttie.vn</a> hoặc gọi
+                hotline 1900.8008.</p>
+        </section>
+
+        <section id="cookies">
+            <h2>5. Cookies và công nghệ tương tự</h2>
+            <p>HEARTTIE sử dụng cookies để:</p>
+            <ul>
+                <li>Nhớ thông tin đăng nhập và tùy chọn cá nhân của bạn.</li>
+                <li>Phân tích cách người dùng truy cập và tương tác với website.</li>
+                <li>Cải thiện hiệu suất website và phục vụ quảng cáo phù hợp.</li>
+            </ul>
+            <p>Bạn có thể tùy chỉnh hoặc tắt cookies trong cài đặt trình duyệt nếu muốn. Tuy nhiên, việc tắt cookies có
+                thể ảnh hưởng đến trải nghiệm và một số tính năng trên website.</p>
+        </section>
+
+        <section id="data-sharing">
+            <h2>6. Chia sẻ với bên thứ ba</h2>
+            <p>Thông tin cá nhân của bạn chỉ được chia sẻ trong các trường hợp sau:</p>
+            <ul>
+                <li>Đối tác vận chuyển, thanh toán nhằm hoàn tất đơn hàng.</li>
+                <li>Cơ quan nhà nước khi có yêu cầu hợp pháp.</li>
+                <li>Bên cung cấp dịch vụ công nghệ hoặc phân tích dữ liệu với điều kiện bảo mật nghiêm ngặt.</li>
+            </ul>
+        </section>
+
+        <section id="children">
+            <h2>7. Chính sách bảo vệ dữ liệu trẻ em</h2>
+            <p>HEARTTIE không thu thập thông tin cá nhân từ trẻ em dưới 16 tuổi mà không có sự đồng ý của người giám
+                hộ hợp pháp.</p>
+            <p>Nếu bạn là phụ huynh hoặc người giám hộ và nhận thấy con em mình cung cấp thông tin cá nhân cho chúng
+                tôi, vui lòng liên hệ để yêu cầu xóa bỏ.</p>
+        </section>
+
+        <section id="contact">
+            <h2>8. Cơ chế tiếp nhận, xử lý phản hồi</h2>
+            <p><strong>Tiếp nhận phản hồi:</strong></p>
+            <p>Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn. Nếu bạn cần giải đáp thêm về chính sách bảo mật, báo cáo
+                sự cố bảo mật hoặc góp ý nhằm cải thiện dịch vụ, vui lòng liên hệ qua các phương thức sau:</p>
+            <ul>
+                <p><i class="fa-solid fa-phone-volume fa-lg"
+                        style="color: #4a92e4; width:16px; height:16px; margin-right:8px;" aria-hidden="true"></i>
+                    Hotline: 1900.8008</p>
+                <p>
+                    <i class="fa-solid fa-envelope fa-lg"
+                        style="color: #4a92e4; width:16px; height:16px; margin-right:8px;" aria-hidden="true"></i>
+                    Email: <a href="mailto:hotro@hearttie.vn" style="color: #0071e3; text-decoration: none;">
+                        hotro@hearttie.vn
+                    </a>
+                </p>
+                <p><i class="fa-solid fa-location-pin fa-lg"
+                        style="color: #4a92e4; width:16px; height:16px;  margin-right:8px;" aria-hidden="true"></i> Địa
+                    chỉ: 128, Nguyễn Văn Cừ (nối dài), Phường An Bình, Quận Ninh Kiều, Thành Phố Cần Thơ.</p>
+            </ul>
+            <p><strong>Xử lý phản hồi:</strong></p>
+            <ul>
+                <li>Ghi nhận thông tin chi tiết từ khách hàng.</li>
+                <li>Phân loại và đánh giá mức độ nghiêm trọng của vấn đề.</li>
+                <li>Chuyển đến bộ phận chuyên trách để xử lý trong thời gian sớm nhất.</li>
+                <li>Phản hồi lại khách hàng về tiến trình xử lý và kết quả trong vòng 3-5 ngày làm việc (tùy theo mức độ
+                    phức tạp).</li>
+            </ul>
+            <p><strong>Cam kết hỗ trợ:</strong></p>
+            <ul>
+                <li>Cam kết bảo vệ quyền lợi khách hàng và xử lý mọi phản hồi nhanh chóng, minh bạch và công bằng.</li>
+                <li>Liên hệ trực tiếp khách hàng để trao đổi và làm rõ thông tin khi cần thiết.</li>
+                <li>Mọi thông tin trao đổi được bảo mật tuyệt đối và chỉ sử dụng trong phạm vi xử lý yêu cầu.</li>
+            </ul>
+        </section>
+    </div>
+
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2020 Công ty cổ phần HEARTTIE. GPDKKD: 0303217354 do sở Cần Thơ cấp ngày 02/01/2015. GPMXH:
+                21/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 11/01/2021. Địa chỉ: 128, Nguyễn Văn Cừ (nối dài),
+                Phường An Bình, Quận Ninh Kiều, Thành Phố Cần Thơ.
+                <br />
+                Chịu trách nhiệm nội dung: Tiêu Ngọc Thanh Tâm. Tất cả các quyền được bảo
+                lưu.
+            </p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("back-button").addEventListener("click", function () {
+            history.back();
+        });
+    </script>
+</body>
+
+</html>

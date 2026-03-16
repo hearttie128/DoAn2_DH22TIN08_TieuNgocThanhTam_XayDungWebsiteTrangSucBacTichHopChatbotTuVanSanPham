@@ -1,8 +1,8 @@
-# Website Trang Sức Bạc tích hợp Chatbot Tư Vấn Sản Phẩm
+# Website Trang Sức Bạc Tích Hợp Chatbot Tư Vấn Sản Phẩm Theo Nhu Cầu Của Khách Hàng
 
 ## Sinh viên thực hiện
 Tiêu Ngọc Thanh Tâm  
-Lớp: DH22TIN08
+Lớp: DH22TIN08 
 MSSV: 224124
 
 ## Mô tả đề tài
